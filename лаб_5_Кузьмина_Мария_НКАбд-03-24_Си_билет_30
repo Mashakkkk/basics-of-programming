@@ -1,0 +1,12 @@
+#include <stdio.h>
+int main(){
+    int k=0,s=0;
+    while (k<=50){
+        if (k%5==0||k%6==0){
+            s+=k;
+        }
+        k++;
+    }
+    printf("%d",s);
+    return 0;
+}
