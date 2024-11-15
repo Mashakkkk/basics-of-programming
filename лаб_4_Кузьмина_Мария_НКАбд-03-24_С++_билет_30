@@ -1,0 +1,11 @@
+#include <iostream>
+int main(){
+    int k,s;
+    for (k=1;k<=30;k++){
+        if (k%5==0||k%6==0){
+            s+=k;
+        }
+    }
+    std::cout<<s;
+    return 0;
+}
