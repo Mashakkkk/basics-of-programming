@@ -1,0 +1,24 @@
+#include <iostream>
+#include <vector>
+int main(){
+    int i,k=0,v;
+    std::cout<<"правильный пароль: ";
+    std::cin>>v;
+    std::vector<int>n;
+    while (true){
+        std::cin>>i;
+        k++;
+        n.push_back(i);
+        if (k==6){
+            break;
+        }
+    }
+    for (int x: n){
+        if (x==v){
+            std::cout<<"Молодец!";
+        }else{
+            continue;
+        }
+    }
+    return 0;
+}
